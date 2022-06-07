@@ -1,17 +1,8 @@
 .App {
   text-align: center;
-  background-color: black;
   height: 100vh;
   padding: 40px;
 }
-/* 
-input {
-  width: 500px;
-  height: 40px;
-  border-radius: 10px;
-  font-size: 30px;
-  text-transform: uppercase;
-} */
 
 input[type="text"] {
   width: 60px;
