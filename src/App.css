@@ -1,38 +1,85 @@
 .App {
   text-align: center;
+  background-color: black;
+  height: 100vh;
+  padding: 40px;
+}
+/* 
+input {
+  width: 500px;
+  height: 40px;
+  border-radius: 10px;
+  font-size: 30px;
+  text-transform: uppercase;
+} */
+
+input[type="text"] {
+  width: 60px;
+  height: 60px;
+  border-radius: 5px;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.keyLetter {
+  width: 10%;
+  display: block;
+  height: 60px;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.keyboard {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  align-self: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  margin-top: 70px;
+}
+
+
+button {
+  width: 100px;
+  height: 48px;
+  margin-left: 5px;
+  border-radius: 10px;
+  font-size: 30px;
   color: white;
+  background-color: green;
 }
 
-.App-link {
-  color: #61dafb;
+.keyboardBase {
+  max-width: 1050px;
+  position: absolute;
+  padding: 5px;
+  left: 50%;
+  bottom: 10%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(197, 197, 197);
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(30, 30px);
+  grid-template-rows: repeat(2, 60px);
+  grid-gap: 5px;
+  justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.key {
+  background-color: rgb(243, 243, 243);
+  border: 2px solid black;
+  border-radius: 5px;
+  grid-column: span 2;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 17px;
+  text-transform: uppercase;
+}
+
+.key:hover {
+border: 1px solid #eeeeee;
+
 }
